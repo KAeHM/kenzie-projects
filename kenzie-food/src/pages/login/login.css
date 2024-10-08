@@ -1,0 +1,75 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 300px;
+  box-shadow: 0 0 1em gray;
+  border-radius: 10px;
+}
+
+*{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+.main__h1{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.main__div{  
+  display: flex;
+  flex-direction: column;    
+  width: 100%;
+  align-items: center;
+}
+
+.main__email, .main__password{
+  width: 90%;
+  width: 246px;
+  margin: 8px;
+  font-size: 18px;
+  background: #F3F3F3;
+  border: none;
+  border-radius: 4px;
+}
+
+.main__email::after, .main__password::after{
+  background: white;
+}
+
+.main__p{  
+  margin: -1px;  
+}
+
+.main__btn, .main__btn__criar__conta{
+  margin-top: 5px;
+  width: 50%;
+  background: #FF2253;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.display {
+  display: none;
+}
+
+.main__erro{
+  text-align: center;
+  color: red;
+}

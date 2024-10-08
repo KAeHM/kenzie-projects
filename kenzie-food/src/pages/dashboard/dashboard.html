@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <div class="title">
+            <p id="Kenzie">Kenzie</p> 
+            <span id="Food">food</span>
+        </div>
+
+        <div class="input__user">
+            <div class="input">
+                <img class="img" src="../../imgs/lupa.png" alt="lupa">
+                <input class="input__pesquisa" type="text" maxlength="20">
+            </div>
+
+            <img class="img__perfil" src="../../imgs/icon.png" alt="">
+        </div>
+
+
+    </header>
+
+    <main>
+
+        <div class="buttons">
+            <div class="filtros">
+                <button class="filtros--Todos">Todos</button>
+                <button class="filtros--Panificadora">
+                    <img src="../../imgs/pao.png" alt="">
+                    Panificadora
+                </button>
+                <button class="filtros--Frutas">
+                    <img src="../../imgs/fruta.png" alt="">
+                    Frutas
+                </button>
+                <button class="filtros--Bebidas">
+                    <img src="../../imgs/bebida.png" alt="">
+                    Bebidas
+                </button>
+            
+            </div>
+
+        </div>
+
+        <div class="contentList">
+
+            <ul class="list">
+
+                <!--<li class="item__list">
+                     <div class="basic__info__item">
+                         <img src="../../imgs/pao.png" alt="">
+                         <p>Nome</p>
+                         <ul class="tags">
+                             <li class="tag">
+                                 Bebibas
+                             </li>
+                             <li class="tag">
+                                 Frutas
+                             </li>
+                         </ul>
+                     </div>
+ 
+                     <div class="description__action">
+                         <p>dasdkoasokd dokaskdosako daosdkosa</p>
+                         <div class="actions">
+                             <div class="button__action Editar">
+                                 <img src="../../imgs/lixo.png" alt="">
+                             </div>
+                             <div class="button__action Excluir">
+                                 <img src="../../imgs/edit.png" alt="">
+                             </div>
+                         </div>
+                     </div>
+                 </li> 
+                -->
+ 
+            </ul>
+
+
+        </div>
+
+    </main>
+
+    <div class="div__adicionar">
+        <button class="buttons--Adicionar">+</button>
+    </div>
+
+    <div class="modal__back--1">
+
+        <div class="cadastro__edit">
+
+            <div class="modal__header">
+                <p class="modal__title">Cadastro de Produto</p>
+                <button class="modal__fechar">X</button>
+            </div>
+
+            <div class="modal__inputs">
+                <form action="">
+                    <label for="nome">Nome do produto</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite o nome">
+                    
+                    <label for="descricao">Descrição</label>
+                    <input type="text" name="descricao" id="descricao" placeholder="Digite uma descrição">
+
+                    <label for="categoria">Categorias</label>
+                    <div class="modal__inputs--options">
+                        <label class="modal__options" for="fruta">Frutas</label>
+                        <input type="radio" value="Frutas" name="categoria" id="fruta" checked>
+                        <label class="modal__options" for="bebida">Bebidas</label>
+                        <input type="radio" value="Bebidas" name="categoria" id="bebida">
+                        <label class="modal__options" for="panificadora">Panificadora</label>
+                        <input type="radio" value="Panificadora" name="categoria" id="panificadora">
+                    </div>
+
+                    <label for="preco">Valor do Produto</label>
+                    <input type="number" name="preco" id="preco" placeholder="Digite um valor">
+
+                    <label for="imagem">Link da imagem</label>
+                    <input type="url" name="imagem" id="imagem" placeholder="Inserir link">
+
+                    <button type="submit" id="action__modal">Cadastrar Produto</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal__back--2">
+        <div class="confirmacao__excluir">
+
+            <div class="header__confirmacao">
+                <p>Exclusão de produto</p>
+                <button id="fechar__model--Excluir">X</button>
+            </div>
+
+            <p>Tem certeza que deseja excluir este produto?</p>
+
+            <div class="opcoes__confirmacao">
+                <button id="button__option--1">Sim</button>
+                <button id="button__option--2">Não</button>
+            </div>
+        </div>
+    </div>
+
+
+<script type="module" src="./dashboard.js"></script>
+</body>
+</html>
